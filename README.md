@@ -20,3 +20,4 @@
 #### 15. COlocar a section e o article em uma disposição lateral.
 
 <img src="./1652712788745.jpeg" alt="Fotos"/>
+<img src="./1652712788791.jpeg" alt="Fotos"/>
