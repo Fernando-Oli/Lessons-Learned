@@ -1,7 +1,7 @@
 # 🚧 Projeto Lessons Learned 🚧
 
 #### Primeiro projeto desenvolvido por [Fernando Oliveira](https://www.linkedin.com/in/fernando1806/) na Trybe.
-#### A ideia do projeto era avaliar nossos conhecimentos em CSS e HTML estudando até agora.
+#### A ideia do projeto era avaliar nossos conhecimentos em CSS e HTML estudados até agora.
 ## Requisitos:
 #### 1. Mudar a cor de fundo da página.
 #### 2. Adicionar um cabeçalho que teve título usando a propriedade top.
