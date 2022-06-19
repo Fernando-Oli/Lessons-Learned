@@ -1,4 +1,4 @@
-# 🚧 README em construção 🚧
+# 🚧 Projeto Lessons Learned 🚧
 
 #### Primeiro projeto desenvolvido por [Fernando Oliveira](https://www.linkedin.com/in/fernando1806/) na Trybe.
 #### A ideia do projeto era avaliar nossos conhecimentos em CSS e HTML estudando até agora.
