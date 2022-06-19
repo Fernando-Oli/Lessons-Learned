@@ -1,0 +1,719 @@
+{
+  "stats": {
+    "suites": 11,
+    "tests": 22,
+    "passes": 19,
+    "pending": 0,
+    "failures": 3,
+    "start": "2022-05-16T00:20:16.996Z",
+    "end": "2022-05-16T00:20:33.061Z",
+    "duration": 16065,
+    "testsRegistered": 22,
+    "passPercent": 86.36363636363636,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09ff3682-be3c-4296-bc2d-f129ece86244",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "70d95e43-6c1e-423c-9046-288b8e3b440a",
+          "title": "1 - Adicione uma cor de fundo específica para a página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Possuir cor de fundo: rgb(253, 251, 251)",
+              "fullTitle": "1 - Adicione uma cor de fundo específica para a página Possuir cor de fundo: rgb(253, 251, 251)",
+              "timedOut": null,
+              "duration": 187,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('body').should('have.css', 'backgroundColor', 'rgb(253, 251, 251)');",
+              "err": {},
+              "uuid": "9f3605ee-d2df-4cb4-9122-cae8f7ffa2a3",
+              "parentUUID": "70d95e43-6c1e-423c-9046-288b8e3b440a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9f3605ee-d2df-4cb4-9122-cae8f7ffa2a3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 187,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "833b0b20-c55d-4421-95c6-04158b8a1e4e",
+          "title": "2 - Adicione uma barra superior com um título",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A barra deve possuir o ID \"cabecalho\"",
+              "fullTitle": "2 - Adicione uma barra superior com um título A barra deve possuir o ID \"cabecalho\"",
+              "timedOut": null,
+              "duration": 132,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('#cabecalho');",
+              "err": {},
+              "uuid": "9beff9eb-9210-46cd-bb68-9ac056f36c35",
+              "parentUUID": "833b0b20-c55d-4421-95c6-04158b8a1e4e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "A barra superior deve ser fixa no topo da página, com a propriedade top tendo o valor `0`",
+              "fullTitle": "2 - Adicione uma barra superior com um título A barra superior deve ser fixa no topo da página, com a propriedade top tendo o valor `0`",
+              "timedOut": null,
+              "duration": 10124,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#cabecalho').should('have.css', 'position', 'fixed').should('have.css', 'top', '0px');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '<header#cabecalho>' to have CSS property 'position' with the value 'fixed', but the value was 'absolute'",
+                "estack": "AssertionError: Timed out retrying: expected '<header#cabecalho>' to have CSS property 'position' with the value 'fixed', but the value was 'absolute'\n    at Context.eval (http://localhost:40357/__cypress/tests?p=cypress/integration/project.spec.js:159:26)",
+                "diff": "- 'absolute'\n+ 'fixed'\n"
+              },
+              "uuid": "fe376451-c1f8-4453-86df-dda7a8bc4aba",
+              "parentUUID": "833b0b20-c55d-4421-95c6-04158b8a1e4e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O título deve estar dentro da barra e possuir o ID \"titulo\", além de ser uma tag \"h1\"",
+              "fullTitle": "2 - Adicione uma barra superior com um título O título deve estar dentro da barra e possuir o ID \"titulo\", além de ser uma tag \"h1\"",
+              "timedOut": null,
+              "duration": 80,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('#cabecalho h1#titulo');",
+              "err": {},
+              "uuid": "52cceb01-d081-4f27-956b-dd445b7b2a09",
+              "parentUUID": "833b0b20-c55d-4421-95c6-04158b8a1e4e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9beff9eb-9210-46cd-bb68-9ac056f36c35",
+            "52cceb01-d081-4f27-956b-dd445b7b2a09"
+          ],
+          "failures": [
+            "fe376451-c1f8-4453-86df-dda7a8bc4aba"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10336,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "97000883-74a8-401b-8822-c581742a395c",
+          "title": "3 - Adicione uma foto sua à página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A foto deve ser inserida utilizando uma tag img com o ID \"minha_foto\"",
+              "fullTitle": "3 - Adicione uma foto sua à página A foto deve ser inserida utilizando uma tag img com o ID \"minha_foto\"",
+              "timedOut": null,
+              "duration": 99,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('img#minha_foto').should('have.attr', 'src');",
+              "err": {},
+              "uuid": "fcd2952e-9621-4a3d-8fe8-8b72c79f491b",
+              "parentUUID": "97000883-74a8-401b-8822-c581742a395c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fcd2952e-9621-4a3d-8fe8-8b72c79f491b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 99,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "39eda91c-d45e-4b38-8bd9-ddc65347193f",
+          "title": "4 - Adicione uma lista de lições aprendidas à página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A lista deve ser numerada e possuir o ID \"licoes_aprendidas\"",
+              "fullTitle": "4 - Adicione uma lista de lições aprendidas à página A lista deve ser numerada e possuir o ID \"licoes_aprendidas\"",
+              "timedOut": null,
+              "duration": 97,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('ol#licoes_aprendidas');",
+              "err": {},
+              "uuid": "ec4b8ebf-b4c2-43e7-b2df-0cfcee865695",
+              "parentUUID": "39eda91c-d45e-4b38-8bd9-ddc65347193f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "A lista deve possuir 10 itens",
+              "fullTitle": "4 - Adicione uma lista de lições aprendidas à página A lista deve possuir 10 itens",
+              "timedOut": null,
+              "duration": 93,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ol#licoes_aprendidas').find('li').should('have.length', 10);",
+              "err": {},
+              "uuid": "47ffb2ce-748f-4d1d-a5db-859676684758",
+              "parentUUID": "39eda91c-d45e-4b38-8bd9-ddc65347193f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec4b8ebf-b4c2-43e7-b2df-0cfcee865695",
+            "47ffb2ce-748f-4d1d-a5db-859676684758"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 190,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7295fe6a-8e59-4461-be76-43ec893432ce",
+          "title": "5 - Crie uma lista de lições que ainda deseja aprender para a página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A lista não deve ser numerada e deve possuir o ID \"licoes_a_aprender\"",
+              "fullTitle": "5 - Crie uma lista de lições que ainda deseja aprender para a página A lista não deve ser numerada e deve possuir o ID \"licoes_a_aprender\"",
+              "timedOut": null,
+              "duration": 104,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('ul#licoes_a_aprender');",
+              "err": {},
+              "uuid": "0c14d4a6-cd33-4685-a185-45cff8f3a5c2",
+              "parentUUID": "7295fe6a-8e59-4461-be76-43ec893432ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "A lista deve possuir 10 itens",
+              "fullTitle": "5 - Crie uma lista de lições que ainda deseja aprender para a página A lista deve possuir 10 itens",
+              "timedOut": null,
+              "duration": 121,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul#licoes_a_aprender').find('li').should('have.length', 10);",
+              "err": {},
+              "uuid": "0c19e7fa-29cb-4c2b-b143-98acc8523443",
+              "parentUUID": "7295fe6a-8e59-4461-be76-43ec893432ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c14d4a6-cd33-4685-a185-45cff8f3a5c2",
+            "0c19e7fa-29cb-4c2b-b143-98acc8523443"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 225,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "07c98492-ff59-4f74-a3dc-c456f9d9c924",
+          "title": "6 - Adicione um rodapé para a página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O rodapé deve possuir o ID \"rodape\"",
+              "fullTitle": "6 - Adicione um rodapé para a página O rodapé deve possuir o ID \"rodape\"",
+              "timedOut": null,
+              "duration": 134,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('footer#rodape').should('exist');",
+              "err": {},
+              "uuid": "cd71d26e-9250-4e18-9c37-e44c3f413884",
+              "parentUUID": "07c98492-ff59-4f74-a3dc-c456f9d9c924",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cd71d26e-9250-4e18-9c37-e44c3f413884"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 134,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4d254006-9ad6-469d-b3b5-b26ced669840",
+          "title": "7 - Insira pelo menos um link externo na página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A configuração desse link deve ser feita para abrir em uma nova aba do navegador",
+              "fullTitle": "7 - Insira pelo menos um link externo na página A configuração desse link deve ser feita para abrir em uma nova aba do navegador",
+              "timedOut": null,
+              "duration": 135,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').then(function (a) {\n  var actual = Array.from(a).some(function (element) {\n    return element.target === '_blank' && element.href !== '';\n  });\n  expect(actual).to.be[\"true\"];\n});",
+              "err": {},
+              "uuid": "0ba2bafe-5547-4cc6-9fcd-9cf0ccaa22e6",
+              "parentUUID": "4d254006-9ad6-469d-b3b5-b26ced669840",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ba2bafe-5547-4cc6-9fcd-9cf0ccaa22e6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 135,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fbf76e28-2151-48c2-bb80-8a4eec11c034",
+          "title": "8 - Crie um artigo sobre seu aprendizado",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A `tag` `article` devem ser utilizadas",
+              "fullTitle": "8 - Crie um artigo sobre seu aprendizado A `tag` `article` devem ser utilizadas",
+              "timedOut": null,
+              "duration": 133,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('article');",
+              "err": {},
+              "uuid": "cf67af86-260e-4418-be89-190bc6386eac",
+              "parentUUID": "fbf76e28-2151-48c2-bb80-8a4eec11c034",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O artigo deve ter mais de 300 caracteres e menos de 600",
+              "fullTitle": "8 - Crie um artigo sobre seu aprendizado O artigo deve ter mais de 300 caracteres e menos de 600",
+              "timedOut": null,
+              "duration": 153,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article').invoke('text').then(function (text) {\n  expect(text).to.have.length.of.at.most(600);\n  expect(text).to.have.length.of.at.above(300);\n});",
+              "err": {
+                "message": "AssertionError: expected '\\n        \\n          Quem sou eu?\\n          \\n            \\n              \\n            \\n            \\n              Meu nome é Fernando Luís Rodrigues de Oliveira, tenho 21 anos e\\n              sou natural de Brasília Porém já morei em Fortaleza-CE,\\n              Marília-SP, Campina Grande-PB e atualmente moro em Anápolis-Go.\\n              Gosto de viajar, jogar bola e conversar. Meus principais hobbies\\n              são ler HQ, jogar e tocar baixo.\\n            \\n          \\n        \\n        \\n          Minha trajetória\\n            \\n              Estudo na Trybe para me tornar um desenvolver Web. Estudei\\n              Comunicação Social pela Universidade Federal de Campina Grande,\\n              onde tive meu primeiro contato com programação ao desenvolver um\\n              site para exibição de um projeto. Isso me fez repensar, acabei me\\n              apaixonando por programação e isso me fez mudar de área.\\n            \\n          \\n        \\n        \\n          \\n            Jornada Trybe\\n            \\n              Comecei minha jornada na Trybe no meio de maio. Mas já pude ver a paixão \\n              que as pessoas que trabalham fazem seu trabalho. Até agora só tive ótimos professores,\\n              didáticos e com uma linguagem que facilita o entendimento de \"materias\" mais difíceis.\\n              O dia-a-dia tende a começar pelas 13/14 horas da tarde e vai até às 20h. \\n              Divididos em momentos síncronos e assícronos, com aula ao vivo, explicação \\n              do conteúdo do dia, conteúdo do Course(plataforma onde estão os conteúdos \\n              assíncronos), momento de soft skills, mentoria técnicas, academias de lógicas,\\n              isso ainda não inclui os dias de projeto. Ou seja é bem puxado e cansativo, mas ao mesmo\\n              tempo gratificante e desafiador. \\n              O conteúdo é divido em módulos e os módulos em blocos. Cada bloco tem sua temática como CSS, \\n              Javascript, Git Hub entre outros. Além dos temas técnicos, há a trilha de soft skills,\\n              que lidam com habilidades como comunicação, se expressar, gerenciamento de si e do tempo,\\n              aprender como aprender para formar um bom profissional, não apenas uma pessoa que sabe\\n              programar.\\n              Mesmo com tudo isso, o maior mérito da Trybe é como ela organiza os conteúdos e tenta \\n              incluir esses novos estudantes de programação ao mercado de trabalho. Tendo uma taxa de\\n              empregabilidade dos alunos de até 92% após a conclusão do curso.\\n              Por fim concluo que se você quer entrar no mercado na área de programação e tecnologia,\\n              está disposto a dedicar horas do seu dia, a Trybe pode ser o caminho para você.\\n                \\n                  \\n                    Titulo\\n                    titulo\\n                  \\n                  \\n                    Conteudo\\n                    Conteudo\\n                  \\n              \\n              \\n          \\n        \\n        \\n          Lições aprendidas Lições a aprender\\n          \\n            Git e Github\\n            Linux e seu sistema\\n            HTML básico\\n            CSS básico\\n            Model box CSS\\n            Comunicação assertiva\\n            Funcionamento da internet\\n            Tags HTML\\n            PDI\\n            Unix & Bash\\n          \\n          \\n            Javascript\\n            React\\n            React Router\\n            Metodologias Ágeis\\n            Redux\\n            SQL\\n            Node.js\\n            TypeScript\\n            Python\\n            Algoritmos\\n          \\n        \\n      ' to have a length at most 600 but got 3572",
+                "estack": "AssertionError: expected '\\n        \\n          Quem sou eu?\\n          \\n            \\n              \\n            \\n            \\n              Meu nome é Fernando Luís Rodrigues de Oliveira, tenho 21 anos e\\n              sou natural de Brasília Porém já morei em Fortaleza-CE,\\n              Marília-SP, Campina Grande-PB e atualmente moro em Anápolis-Go.\\n              Gosto de viajar, jogar bola e conversar. Meus principais hobbies\\n              são ler HQ, jogar e tocar baixo.\\n            \\n          \\n        \\n        \\n          Minha trajetória\\n            \\n              Estudo na Trybe para me tornar um desenvolver Web. Estudei\\n              Comunicação Social pela Universidade Federal de Campina Grande,\\n              onde tive meu primeiro contato com programação ao desenvolver um\\n              site para exibição de um projeto. Isso me fez repensar, acabei me\\n              apaixonando por programação e isso me fez mudar de área.\\n            \\n          \\n        \\n        \\n          \\n            Jornada Trybe\\n            \\n              Comecei minha jornada na Trybe no meio de maio. Mas já pude ver a paixão \\n              que as pessoas que trabalham fazem seu trabalho. Até agora só tive ótimos professores,\\n              didáticos e com uma linguagem que facilita o entendimento de \"materias\" mais difíceis.\\n              O dia-a-dia tende a começar pelas 13/14 horas da tarde e vai até às 20h. \\n              Divididos em momentos síncronos e assícronos, com aula ao vivo, explicação \\n              do conteúdo do dia, conteúdo do Course(plataforma onde estão os conteúdos \\n              assíncronos), momento de soft skills, mentoria técnicas, academias de lógicas,\\n              isso ainda não inclui os dias de projeto. Ou seja é bem puxado e cansativo, mas ao mesmo\\n              tempo gratificante e desafiador. \\n              O conteúdo é divido em módulos e os módulos em blocos. Cada bloco tem sua temática como CSS, \\n              Javascript, Git Hub entre outros. Além dos temas técnicos, há a trilha de soft skills,\\n              que lidam com habilidades como comunicação, se expressar, gerenciamento de si e do tempo,\\n              aprender como aprender para formar um bom profissional, não apenas uma pessoa que sabe\\n              programar.\\n              Mesmo com tudo isso, o maior mérito da Trybe é como ela organiza os conteúdos e tenta \\n              incluir esses novos estudantes de programação ao mercado de trabalho. Tendo uma taxa de\\n              empregabilidade dos alunos de até 92% após a conclusão do curso.\\n              Por fim concluo que se você quer entrar no mercado na área de programação e tecnologia,\\n              está disposto a dedicar horas do seu dia, a Trybe pode ser o caminho para você.\\n                \\n                  \\n                    Titulo\\n                    titulo\\n                  \\n                  \\n                    Conteudo\\n                    Conteudo\\n                  \\n              \\n              \\n          \\n        \\n        \\n          Lições aprendidas Lições a aprender\\n          \\n            Git e Github\\n            Linux e seu sistema\\n            HTML básico\\n            CSS básico\\n            Model box CSS\\n            Comunicação assertiva\\n            Funcionamento da internet\\n            Tags HTML\\n            PDI\\n            Unix & Bash\\n          \\n          \\n            Javascript\\n            React\\n            React Router\\n            Metodologias Ágeis\\n            Redux\\n            SQL\\n            Node.js\\n            TypeScript\\n            Python\\n            Algoritmos\\n          \\n        \\n      ' to have a length at most 600 but got 3572\n    at Context.eval (http://localhost:40357/__cypress/tests?p=cypress/integration/project.spec.js:225:41)",
+                "diff": "- 3572\n+ 600\n"
+              },
+              "uuid": "4cf310ea-11b2-4b6f-9903-93dd65153139",
+              "parentUUID": "fbf76e28-2151-48c2-bb80-8a4eec11c034",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf67af86-260e-4418-be89-190bc6386eac"
+          ],
+          "failures": [
+            "4cf310ea-11b2-4b6f-9903-93dd65153139"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 286,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "24518be8-7ef3-4306-8b13-335b31c505a8",
+          "title": "9 - Crie uma seção que conta uma passagem sobre seu aprendizado",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A `tag` `aside` deve ser utilizada",
+              "fullTitle": "9 - Crie uma seção que conta uma passagem sobre seu aprendizado A `tag` `aside` deve ser utilizada",
+              "timedOut": null,
+              "duration": 119,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('aside');",
+              "err": {},
+              "uuid": "91e49f34-ea85-4843-b8a5-3400933cf1c9",
+              "parentUUID": "24518be8-7ef3-4306-8b13-335b31c505a8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "A seção deve ter mais que 100 caracteres e menos que 300",
+              "fullTitle": "9 - Crie uma seção que conta uma passagem sobre seu aprendizado A seção deve ter mais que 100 caracteres e menos que 300",
+              "timedOut": null,
+              "duration": 155,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('aside').invoke('text').then(function (text) {\n  expect(text).to.have.length.of.at.above(100);\n  expect(text).to.have.length.of.at.most(300);\n});",
+              "err": {
+                "message": "AssertionError: expected '\\n            Jornada Trybe\\n            \\n              Comecei minha jornada na Trybe no meio de maio. Mas já pude ver a paixão \\n              que as pessoas que trabalham fazem seu trabalho. Até agora só tive ótimos professores,\\n              didáticos e com uma linguagem que facilita o entendimento de \"materias\" mais difíceis.\\n              O dia-a-dia tende a começar pelas 13/14 horas da tarde e vai até às 20h. \\n              Divididos em momentos síncronos e assícronos, com aula ao vivo, explicação \\n              do conteúdo do dia, conteúdo do Course(plataforma onde estão os conteúdos \\n              assíncronos), momento de soft skills, mentoria técnicas, academias de lógicas,\\n              isso ainda não inclui os dias de projeto. Ou seja é bem puxado e cansativo, mas ao mesmo\\n              tempo gratificante e desafiador. \\n              O conteúdo é divido em módulos e os módulos em blocos. Cada bloco tem sua temática como CSS, \\n              Javascript, Git Hub entre outros. Além dos temas técnicos, há a trilha de soft skills,\\n              que lidam com habilidades como comunicação, se expressar, gerenciamento de si e do tempo,\\n              aprender como aprender para formar um bom profissional, não apenas uma pessoa que sabe\\n              programar.\\n              Mesmo com tudo isso, o maior mérito da Trybe é como ela organiza os conteúdos e tenta \\n              incluir esses novos estudantes de programação ao mercado de trabalho. Tendo uma taxa de\\n              empregabilidade dos alunos de até 92% após a conclusão do curso.\\n              Por fim concluo que se você quer entrar no mercado na área de programação e tecnologia,\\n              está disposto a dedicar horas do seu dia, a Trybe pode ser o caminho para você.\\n                \\n                  \\n                    Titulo\\n                    titulo\\n                  \\n                  \\n                    Conteudo\\n                    Conteudo\\n                  \\n              \\n              \\n          ' to have a length at most 300 but got 2003",
+                "estack": "AssertionError: expected '\\n            Jornada Trybe\\n            \\n              Comecei minha jornada na Trybe no meio de maio. Mas já pude ver a paixão \\n              que as pessoas que trabalham fazem seu trabalho. Até agora só tive ótimos professores,\\n              didáticos e com uma linguagem que facilita o entendimento de \"materias\" mais difíceis.\\n              O dia-a-dia tende a começar pelas 13/14 horas da tarde e vai até às 20h. \\n              Divididos em momentos síncronos e assícronos, com aula ao vivo, explicação \\n              do conteúdo do dia, conteúdo do Course(plataforma onde estão os conteúdos \\n              assíncronos), momento de soft skills, mentoria técnicas, academias de lógicas,\\n              isso ainda não inclui os dias de projeto. Ou seja é bem puxado e cansativo, mas ao mesmo\\n              tempo gratificante e desafiador. \\n              O conteúdo é divido em módulos e os módulos em blocos. Cada bloco tem sua temática como CSS, \\n              Javascript, Git Hub entre outros. Além dos temas técnicos, há a trilha de soft skills,\\n              que lidam com habilidades como comunicação, se expressar, gerenciamento de si e do tempo,\\n              aprender como aprender para formar um bom profissional, não apenas uma pessoa que sabe\\n              programar.\\n              Mesmo com tudo isso, o maior mérito da Trybe é como ela organiza os conteúdos e tenta \\n              incluir esses novos estudantes de programação ao mercado de trabalho. Tendo uma taxa de\\n              empregabilidade dos alunos de até 92% após a conclusão do curso.\\n              Por fim concluo que se você quer entrar no mercado na área de programação e tecnologia,\\n              está disposto a dedicar horas do seu dia, a Trybe pode ser o caminho para você.\\n                \\n                  \\n                    Titulo\\n                    titulo\\n                  \\n                  \\n                    Conteudo\\n                    Conteudo\\n                  \\n              \\n              \\n          ' to have a length at most 300 but got 2003\n    at Context.eval (http://localhost:40357/__cypress/tests?p=cypress/integration/project.spec.js:240:41)",
+                "diff": "- 2003\n+ 300\n"
+              },
+              "uuid": "3596584d-cdfb-4539-833a-eed978116c58",
+              "parentUUID": "24518be8-7ef3-4306-8b13-335b31c505a8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "91e49f34-ea85-4843-b8a5-3400933cf1c9"
+          ],
+          "failures": [
+            "3596584d-cdfb-4539-833a-eed978116c58"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5c12fe5e-1aa6-48c3-813f-8b272abea743",
+          "title": "10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar se a página possui um elemento \"article\"",
+              "fullTitle": "10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles Validar se a página possui um elemento \"article\"",
+              "timedOut": null,
+              "duration": 115,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('article');",
+              "err": {},
+              "uuid": "d9403932-0cbd-4a1a-ab39-052ae2484c87",
+              "parentUUID": "5c12fe5e-1aa6-48c3-813f-8b272abea743",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar se a página possui um elemento \"header\"",
+              "fullTitle": "10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles Validar se a página possui um elemento \"header\"",
+              "timedOut": null,
+              "duration": 217,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('header');",
+              "err": {},
+              "uuid": "1f7be43d-6649-4cf8-a51c-921729f470f1",
+              "parentUUID": "5c12fe5e-1aa6-48c3-813f-8b272abea743",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar se a página possui um elemento \"nav\"",
+              "fullTitle": "10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles Validar se a página possui um elemento \"nav\"",
+              "timedOut": null,
+              "duration": 126,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('nav');",
+              "err": {},
+              "uuid": "fa342b5e-7ae3-491a-8322-ff20b3c57bf4",
+              "parentUUID": "5c12fe5e-1aa6-48c3-813f-8b272abea743",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar se a página possui um elemento \"section\"",
+              "fullTitle": "10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles Validar se a página possui um elemento \"section\"",
+              "timedOut": null,
+              "duration": 102,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('section');",
+              "err": {},
+              "uuid": "666aa3e7-f328-4d85-b058-e7e82ecf8415",
+              "parentUUID": "5c12fe5e-1aa6-48c3-813f-8b272abea743",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar se a página possui um elemento \"aside\"",
+              "fullTitle": "10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles Validar se a página possui um elemento \"aside\"",
+              "timedOut": null,
+              "duration": 92,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('aside');",
+              "err": {},
+              "uuid": "f0e8dcd8-f3f4-475e-8e85-6da9f0c30f88",
+              "parentUUID": "5c12fe5e-1aa6-48c3-813f-8b272abea743",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar se a página possui um elemento \"footer\"",
+              "fullTitle": "10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles Validar se a página possui um elemento \"footer\"",
+              "timedOut": null,
+              "duration": 91,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('footer');",
+              "err": {},
+              "uuid": "e2c0cfc3-cda3-4049-92e7-ceab50863fe7",
+              "parentUUID": "5c12fe5e-1aa6-48c3-813f-8b272abea743",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9403932-0cbd-4a1a-ab39-052ae2484c87",
+            "1f7be43d-6649-4cf8-a51c-921729f470f1",
+            "fa342b5e-7ae3-491a-8322-ff20b3c57bf4",
+            "666aa3e7-f328-4d85-b058-e7e82ecf8415",
+            "f0e8dcd8-f3f4-475e-8e85-6da9f0c30f88",
+            "e2c0cfc3-cda3-4049-92e7-ceab50863fe7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 743,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3f7ef561-0938-4cf3-b994-8c6073c9bd26",
+          "title": "11 - Teste a semântica da sua página está aprovada pelo site CodeSniffer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Seu site deve passar sem problemas na verificação de semântica do site CodeSniffer",
+              "fullTitle": "11 - Teste a semântica da sua página está aprovada pelo site CodeSniffer Seu site deve passar sem problemas na verificação de semântica do site CodeSniffer",
+              "timedOut": null,
+              "duration": 1857,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('./index.html').then(function (content) {\n  cy.visit('http://squizlabs.github.io/HTML_CodeSniffer/');\n  cy.get('#runHTMLCS').click();\n  cy.get('#source').invoke('val', content).trigger('input');\n  cy.get('#run-button').click();\n  cy.get('.result-count-errors').contains(/^0$/);\n});",
+              "err": {},
+              "uuid": "84e3bcfe-afb0-4a08-a58e-bea7cd7b53d4",
+              "parentUUID": "3f7ef561-0938-4cf3-b994-8c6073c9bd26",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84e3bcfe-afb0-4a08-a58e-bea7cd7b53d4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1857,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
