@@ -19,5 +19,5 @@
 #### 14. Mudar a propriedade fonte.
 #### 15. Colocar a section e o article em uma disposição lateral.
 
-<img src="./1652712788745.jpeg" alt="Fotos" height="100px"/>
-<img src="./1652712788791.jpeg" alt="Fotos"/>
+<img src="./1652712788745.jpeg" alt="Fotos" height="400px"/>
+<img src="./1652712788791.jpeg" alt="Fotos" height="400px"/>
