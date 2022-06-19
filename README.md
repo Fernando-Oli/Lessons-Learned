@@ -2,7 +2,6 @@
 
 #### Primeiro projeto desenvolvido por [Fernando Oliveira](https://www.linkedin.com/in/fernando1806/) na Trybe.
 #### A ideia do projeto era avaliar nossos conhecimentos em CSS e HTML estudando até agora.
-<img src="./1652712788745.jpeg" alt="Fotos"/>
 ## Requisitos:
 #### 1. Mudar a cor de fundo da página.
 #### 2. Adicionar um cabeçalho que teve título usando a propriedade top.
@@ -20,3 +19,4 @@
 #### 14. Mudar a propriedade fonte.
 #### 15. COlocar a section e o article em uma disposição lateral.
 
+<img src="./1652712788745.jpeg" alt="Fotos"/ size="10px">
